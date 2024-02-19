@@ -1,3 +1,5 @@
+
+//Funcion carrusel
 document.addEventListener("DOMContentLoaded", function() {
     const carrusel = document.querySelector(".carrusel");
     const imagenes = carrusel.querySelectorAll("img");
@@ -48,8 +50,36 @@ document.addEventListener("DOMContentLoaded", function() {
       mostrarImagen(indiceActual);
       iniciarIntervalo();
     });
-  
-    
-    
   });
+  
+
+  //Funcion mostrar menu
+  document.addEventListener("DOMContentLoaded", function() {
+    var menuIcon = document.getElementById("menuIcon");
+    var menu = document.getElementById("menu");
+    
+    menuIcon.addEventListener("click", function(event) {
+        event.stopPropagation(); 
+        
+        if (menu.style.display === "block") {
+            menu.style.display = "none"; 
+        } else {
+            var rect = menuIcon.getBoundingClientRect(); 
+            var menuWidth = menu.offsetWidth;
+            var menuHeight = menu.offsetHeight;
+            
+            menu.style.display = "block"; 
+            menu.style.top = rect.top + "px"; 
+            menu.style.left = rect.left - 220 + "px"; 
+        }
+    });
+
+    //Funcion ocultar menu
+    document.addEventListener("click", function(event) {
+        if (!menu.contains(event.target) && event.target !== menuIcon) {
+            menu.style.display = "none"; 
+        }
+    });
+});
+
   
