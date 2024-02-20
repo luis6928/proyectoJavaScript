@@ -3,8 +3,8 @@ header {
   background-color: white;
   width: 100%;
   top: 0;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0rem;
+  margin-right: 0rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,8 +12,8 @@ header {
 
 .logo{
   display: flex;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 .iconos {
@@ -23,10 +23,10 @@ header {
 }
 
 .iconos img {
-  margin-right: 10px;
-  margin-bottom: 10px;
-  width: 30px;
-  height: 30px;
+  margin-right: 0.625rem;
+  margin-bottom: 0.625rem;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 /* Carrusel */
@@ -35,7 +35,7 @@ header {
     margin-top: 3%;
     width: 100%;
     background-color: #666;
-    height: 300px;
+    height: 18.75rem;
     overflow: hidden;
   }
   
@@ -50,8 +50,8 @@ header {
     border: none;
     cursor: pointer;
     background-color: #fff;
-    border-radius: 5px;
-    width: 100px;
+    border-radius: 0.313rem;
+    width: 6,25rem;
   }
 
   .botonSiguiente {
@@ -59,25 +59,25 @@ header {
     position: absolute;
     border: none;
     cursor: pointer;
-    right: 10px;
+    right: 0.625rem;
     background-color: #fff;
-    border-radius: 5px;
-    width: 100px;
+    border-radius: 0.313rem;
+    width: 6.25rem;
   }
   /* Grid de máquinas */
   
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 1.25rem;
   }
   
   .maquina {
     display: flex; 
     flex-direction: column;
     background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 0.625rem;
+    padding: 1.25rem;
     align-items: center;
   }
   
@@ -89,18 +89,18 @@ header {
   }
 
   .maquina img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 10px;
+    width: 12.5rem;
+    height: 12.5rem;
+    margin-bottom: 0.625rem;
   }
   
   .maquina h3 {
-    font-size: 30px;
-    margin-bottom: 5px;
+    font-size: 1.875rem;
+    margin-bottom: 0.313rem;
   }
   
   .maquina p {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #666;
   }
   
@@ -114,10 +114,10 @@ header {
     display: none;
     position: absolute; 
     background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 200px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 0.063rem solid #ccc;
+    border-radius: 0.313rem;
+    width: 12.5rem;
+    box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.2);
 }
 
 .menu ul {
@@ -128,10 +128,10 @@ header {
 }
 
 .menu li {
-    padding: 15px 20px;
+    padding: 10.313rem 1.25rem;
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 1px solid #ccc;
+    border: 0,063rem solid #ccc;
 }
 
 .menu li:hover {
@@ -147,7 +147,7 @@ header {
   align-items: center;
   
   
-  height: 100px;
+  height: 6.25rem;
 }
 .pie img {
   width: 5%;
