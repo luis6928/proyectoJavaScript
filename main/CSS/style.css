@@ -1,3 +1,7 @@
+html{
+  overflow-x: hidden;
+}
+
 header {
   position: fixed;
   background-color: white;
@@ -128,7 +132,7 @@ header {
 }
 
 .menu li {
-    padding: 10.313rem 1.25rem;
+    padding: 1.0313rem 1.25rem;
     cursor: pointer;
     transition: background-color 0.3s;
     border: 0,063rem solid #ccc;
