@@ -12,9 +12,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
-.logo{
+
+.logo {
   display: flex;
   width: 3.125rem;
   height: 3.125rem;
@@ -142,6 +144,128 @@ header {
     background-color: #e0e0e0;
 }
 
+@media (max-width: 200px) {
+  header {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+  .iconos {
+    margin-top: 0;
+    justify-content: right;
+  }
+}
+
+@media (max-width: 300px) {
+  .logo {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .carrusel {
+    height: 15rem;
+  }
+  .carrusel img {
+    
+    object-fit: cover;
+  }
+  .botonAnterior, .botonSiguiente {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .maquina img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    left: 0;
+    top: 100%;
+  }
+}
+
+/*Modal*/
+
+.show-modal {
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+  .hidden {
+    display: none;
+  }
+  
+  .modal {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 40%;
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+
+  .input{
+    width: 90%;
+    padding: 0.625rem;
+    outline: auto;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .aceptar {
+    width: 50%;
+    padding: 0.625rem;
+    outline: auto;
+  }
+
+  .modal h1 {
+
+    font-size: 2.4rem;
+    margin-bottom: 1.25rem;
+  }
+
 
 /*Footer*/
 .pie{
@@ -155,3 +279,4 @@ header {
 .pie img {
   width: 5%;
 }
+

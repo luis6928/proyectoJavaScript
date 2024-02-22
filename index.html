@@ -21,7 +21,7 @@
       </div>
 
       <img src="./img/carro.png" alt="Carro">
-      <a href="login.html"><img src="./img/usuario.png" alt="Usuario" id="iconoMenu"></a>
+      <img src="./img/usuario.png" alt="Usuario" class="show-modal" >
 
     </div>
 
@@ -32,8 +32,19 @@
       </ul>
     </nav>
 
-  </header>
+    
 
+  </header>
+  <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>Iniciar sesión</h1><br>
+      <form name="login" netlify>
+        <input type="text" placeholder="Usuario" class="input"><br><br><br>
+        <input type="password" placeholder="Contraseña" class="input"><br><br><br><br><br><br>
+        <input type="submit" value="Iniciar sesión" class="aceptar" >
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
   <div>
     <div class="carrusel">
       <img src="./img/imagen1.jpg" alt="">
